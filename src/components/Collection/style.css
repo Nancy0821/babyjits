@@ -1,0 +1,153 @@
+.collection {
+    padding: 1rem 2rem 4rem 2rem;
+    background: #1BCBAC;
+    border-bottom: 2px solid #000
+}
+
+.collection > .container {
+    display: grid;
+}
+
+@media screen and (min-width: 1024px) {
+    .collection > .container {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .collection > .container {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+}
+
+.collection > .container .collage {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+@media screen and (min-width: 760px) {
+    .collection > .container .collage {
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,1fr);
+        align-self: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .collection > .container .collage {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .collection > .container .collage {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+.collection > .container .card{
+    padding: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .collection > .container .card {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .collection > .container .card {
+        padding: 0;
+    }
+}
+
+.card-body {
+    box-shadow: -3px -3px 0 #000, 0 -3px 0 #000, 3px -3px 0 #000, 3px 0 0 #000, 3px 3px 0 #000, 0 3px 0 #000, -3px 3px 0 #000, -3px 0 0 #000, 3px 12px 0 #000, 1.5px 12px 0 #000, 0 12px 0 #000, -1.5px 12px 0 #000, -3px 12px 0 #000;
+    background: #fff;
+    padding: 1rem 1.5rem;
+    overflow: hidden;
+    font-weight: 600;
+    white-space: break-spaces;
+    z-index: 1;
+    border-radius: 10px;
+    position: relative;
+    line-height: 150%;
+    font-size: 16px;
+}
+
+.image .card-body {
+    padding: 0;
+    line-height: 0;
+}
+
+.image .card-body img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto
+}
+
+.collection > .container .content {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .collection > .container .content{
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .collection > .container .content {
+        grid-column-start: unset;
+        grid-row-start: unset;
+        margin: 1rem;
+    }
+}
+
+.collection h2 {
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .collection > .container h2 {
+        text-align: left;
+        font-size: 64px;
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .collection > .container h2 {
+        text-align: left;
+        font-size: 64px;
+    }
+}
+
+.collection p {
+    color: #fff;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+@media screen and (min-width: 1024px) {
+    .collection > .container p {
+        font-size: 24px;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .collection > .container p{
+        font-size: 24px;
+    }
+}

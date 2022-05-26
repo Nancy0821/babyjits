@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family:  'Rubik';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x:hidden;
+}
+
+@font-face {
+  font-family: Beachday;
+  src: url("./assets/fonts/beachday.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("./assets/fonts/Rubik-VariableFont_wght.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: AgentRed;
+  src: url("./assets/fonts/AGENTRED.TTF") format("opentype");
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

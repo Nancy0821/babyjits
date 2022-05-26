@@ -1,0 +1,696 @@
+.hero {
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    padding: 1rem 0 1em 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hero > .container {
+    display: grid;
+}
+
+@media screen and (min-width: 1024px) {
+    .hero > .container {
+        grid-template-columns: repeat(2,1fr);
+        padding-bottom: 3rem;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .hero > .container {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+}
+
+.disco {
+    position: absolute;
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .disco {
+        right: 12rem;
+        top: -6rem;
+        display: block;
+    }
+    .discoball {
+        max-width: 350px; 
+    }
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+
+h2 {
+    font-size: 48px;
+    text-shadow: -3px -3px 0 #000, 0 -3px 0 #000, 3px -3px 0 #000, 3px 0 0 #000, 3px 3px 0 #000, 0 3px 0 #000, -3px 3px 0 #000, -3px 0 0 #000, 3px 0 0 #000, 1.5px 0 0 #000, 0 0 0 #000, -1.5px 0 0 #000, -3px 0 0 #000, 3px 1.5px 0 #000, 1.5px 1.5px 0 #000, 0 1.5px 0 #000, -1.5px 1.5px 0 #000, -3px 1.5px 0 #000, 3px 3px 0 #000, 1.5px 3px 0 #000, 0 3px 0 #000, -1.5px 3px 0 #000, -3px 3px 0 #000, 3px 4.5px 0 #000, 1.5px 4.5px 0 #000, 0 4.5px 0 #000, -1.5px 4.5px 0 #000, -3px 4.5px 0 #000, 3px 6px 0 #000, 1.5px 6px 0 #000, 0 6px 0 #000, -1.5px 6px 0 #000, -3px 6px 0 #000, 3px 7.5px 0 #000, 1.5px 7.5px 0 #000, 0 7.5px 0 #000, -1.5px 7.5px 0 #000, -3px 7.5px 0 #000, 3px 9px 0 #000, 1.5px 9px 0 #000, 0 9px 0 #000, -1.5px 9px 0 #000, -3px 9px 0 #000;
+    margin: 1rem 0 2rem 0;
+}
+
+h2, h3 {
+    font-family: Beachday;
+    color: #fff;
+}
+
+h3 {
+    font-size: 36px;
+    text-shadow: -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000, 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, 1px 0 0 #000, 0 0 0 #000, -1px 0 0 #000, -2px 0 0 #000, 2px 1px 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -2px 1px 0 #000, 2px 2px 0 #000, 1px 2px 0 #000, 0 2px 0 #000, -1px 2px 0 #000, -2px 2px 0 #000, 2px 3px 0 #000, 1px 3px 0 #000, 0 3px 0 #000, -1px 3px 0 #000, -2px 3px 0 #000, 2px 4px 0 #000, 1px 4px 0 #000, 0 4px 0 #000, -1px 4px 0 #000, -2px 4px 0 #000, 2px 5px 0 #000, 1px 5px 0 #000, 0 5px 0 #000, -1px 5px 0 #000, -2px 5px 0 #000, 2px 6px 0 #000, 1px 6px 0 #000, 0 6px 0 #000, -1px 6px 0 #000, -2px 6px 0 #000;
+}
+
+.mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.mobile-nav .brand img {
+    width: 180px;
+    height: auto;
+}
+.mobile .brand img {
+    width: 220px;
+    height: auto;
+}
+.navbar .brand {
+    margin: 1rem 0; 
+}
+.brand span {
+    z-index: 1;
+    position: relative;
+    color: #ff0066;
+}
+
+.brand span+span {
+    color: #60c8ff;
+    z-index: 0;
+}
+
+.navbar .links, .navbar .links .close {
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .navbar .links {
+        margin-top: 0;
+        display: flex;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar .links .brand {
+        display: none;
+    }
+}
+
+.burger-menu {
+    padding: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: -3px -3px 0 #000, 0 -3px 0 #000, 3px -3px 0 #000, 3px 0 0 #000, 3px 3px 0 #000, 0 3px 0 #000, -3px 3px 0 #000, -3px 0 0 #000, 3px 12px 0 #000, 1.5px 12px 0 #000, 0 12px 0 #000, -1.5px 12px 0 #000, -3px 12px 0 #000;
+    border: none;
+}
+
+.burger-menu > span {
+    width: 24px;
+    height: 10px;
+    position: relative;
+    display: inline-block;
+    border-top: 3px solid #000;
+}
+
+.burger-menu span::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    left: 0;
+    background-color: #000;
+    position: absolute;
+    top: 3px;
+}
+
+.burger-menu span::after {
+    bottom: -2px;
+    content: "";
+    width: 100%;
+    height: 3px;
+    left: 0;
+    background-color: #000;
+    position: absolute;
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar .links .links-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0.75rem 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar .links .links-container .right>a img+span {
+        display: none;
+    }
+}
+
+.navbar .left a {
+    position: relative;
+}
+
+.navbar .links.mobile {
+    display: block;
+    position: fixed;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    height: 100%;
+    width: 100%;
+    z-index: 99999;
+    top: 0;
+}
+
+.navbar .links.mobile .brand {
+    text-align: center;
+}
+
+
+
+.navbar .links.mobile .close {
+    display: block;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    border-radius:50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.navbar .links.mobile .close:hover {
+    transform: scale(1.1);
+}
+
+.navbar .links.mobile .links-container {
+    display: grid;
+    background: #fff;
+    box-shadow: -3px -3px 0 #000, 0 -3px 0 #000, 3px -3px 0 #000, 3px 0 0 #000, 3px 3px 0 #000, 0 3px 0 #000, -3px 3px 0 #000, -3px 0 0 #000, 3px 12px 0 #000, 1.5px 12px 0 #000, 0 12px 0 #000, -1.5px 12px 0 #000, -3px 12px 0 #000;
+    border-radius: 10px;
+    margin: 2rem;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+.navbar .links.mobile .links-container {
+    display: grid;
+}
+
+.navbar .links.mobile .links-container .left, .navbar .links.mobile .links-container .right {
+    display: grid;
+}
+.navbar .links.mobile .links-container > .left a:first-child {
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.navbar .links.mobile .links-container >* a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 3px solid #000;
+    padding: 1rem 1rem;
+    font-family: "Rubik";
+}
+
+.navbar .links.mobile .links-container {
+    display: grid;
+}
+
+.navbar .links.mobile .links-container>.right img {
+    display: none;
+}
+
+.navbar .left a > .apy {
+    color: #a4e870;
+    position: absolute;
+    right: 1rem;
+    font-weight: 600;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .mobile-nav {
+        display: none;
+    }
+    .navbar .left a {
+        position: relative;
+    }
+
+    .navbar-links {
+        font-family: Beachday;
+        color: #fff;
+        font-size: 24px;
+        text-shadow: -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000, 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, 1px 0 0 #000, 0 0 0 #000, -1px 0 0 #000, -2px 0 0 #000, 2px 1px 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -2px 1px 0 #000, 2px 2px 0 #000, 1px 2px 0 #000, 0 2px 0 #000, -1px 2px 0 #000, -2px 2px 0 #000, 2px 3px 0 #000, 1px 3px 0 #000, 0 3px 0 #000, -1px 3px 0 #000, -2px 3px 0 #000, 2px 4px 0 #000, 1px 4px 0 #000, 0 4px 0 #000, -1px 4px 0 #000, -2px 4px 0 #000, 2px 5px 0 #000, 1px 5px 0 #000, 0 5px 0 #000, -1px 5px 0 #000, -2px 5px 0 #000, 2px 6px 0 #000, 1px 6px 0 #000, 0 6px 0 #000, -1px 6px 0 #000, -2px 6px 0 #000;
+        text-decoration: none;
+        margin-right: 1.5rem;
+        display: inline-block;
+        transition: all .2s;
+    }
+    .apy {
+        right: -0.5rem;
+        font-weight: 400;
+        bottom: -0.5rem;
+        transform: rotate(-5deg);
+        font-size: 13px;
+        color: #a4e870;
+        position: absolute;
+    }
+
+    .navbar-links:hover {
+        transform: rotate(-3deg) scale(1.1)
+    }
+
+    .navbar .links .links-container .right {
+        justify-self: flex-end;
+        display: flex;
+        align-items: center;
+    }
+
+    .website_link {
+        margin-right: 0;
+        transform: scale(1.1);
+    }
+
+    .website_logo {
+        width: 32px;
+        height: 32px;
+        margin-left: 2rem;
+        transition: transform .1s;
+    }
+
+    .website_logo:hover {
+        transform: scale(1.1);
+    }
+}
+
+.cards {
+    z-index: 1;
+    padding: 0 1rem;
+    padding-top: 5rem;
+}
+
+@media screen and (min-width: 1024px) {
+     .cards {
+        position: relative;
+        padding-top: 3rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+     .cards {
+        padding-top: 2rem;
+    }
+}
+
+.card {
+    padding: 1rem 0;
+    position: relative;
+}
+
+.brand .card-title {
+    text-shadow: -4px -4px 0 #10111d, 0 -4px 0 #10111d, 4px -4px 0 #10111d, 4px 0 0 #10111d, 4px 4px 0 #10111d, 0 4px 0 #10111d, -4px 4px 0 #10111d, -4px 0 0 #10111d, 4px 0 0 #10111d, 2px 0 0 #10111d, 0 0 0 #10111d, -2px 0 0 #10111d, -4px 0 0 #10111d, 4px 2px 0 #10111d, 2px 2px 0 #10111d, 0 2px 0 #10111d, -2px 2px 0 #10111d, -4px 2px 0 #10111d, 4px 4px 0 #10111d, 2px 4px 0 #10111d, 0 4px 0 #10111d, -2px 4px 0 #10111d, -4px 4px 0 #10111d, 4px 6px 0 #10111d, 2px 6px 0 #10111d, 0 6px 0 #10111d, -2px 6px 0 #10111d, -4px 6px 0 #10111d, 4px 8px 0 #10111d, 2px 8px 0 #10111d, 0 8px 0 #10111d, -2px 8px 0 #10111d, -4px 8px 0 #10111d, 4px 10px 0 #10111d, 2px 10px 0 #10111d, 0 10px 0 #10111d, -2px 10px 0 #10111d, -4px 10px 0 #10111d, 4px 12px 0 #10111d, 2px 12px 0 #10111d, 0 12px 0 #10111d, -2px 12px 0 #10111d, -4px 12px 0 #10111d;
+}
+
+.brand .card-title img {
+   width: 280px;
+   height: auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .brand .card-title {
+        
+    }
+}
+
+.brand .card-body {
+    color: #fff;
+    background: #59cfa7;
+    box-shadow: -3px -3px 0 #10111d, 0 -3px 0 #10111d, 3px -3px 0 #10111d, 3px 0 0 #10111d, 3px 3px 0 #10111d, 0 3px 0 #10111d, -3px 3px 0 #10111d, -3px 0 0 #10111d, 3px 12px 0 #10111d, 1.5px 12px 0 #10111d, 0 12px 0 #10111d, -1.5px 12px 0 #10111d, -3px 12px 0 #10111d;
+    padding: 1rem 1.5rem;
+    overflow: hidden;
+    font-weight: 600;
+    white-space: break-spaces;
+    z-index: 1;
+    border-radius: 10px;
+    position: relative;
+    line-height: 150%;
+    font-size: 16px;
+    font-family: "Rubik";
+}
+
+.brand .card-body p {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.public .card-title {
+    font-size: 36px;
+    margin-bottom: 2px;
+    text-shadow: -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000, 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, 1px 0 0 #000, 0 0 0 #000, -1px 0 0 #000, -2px 0 0 #000, 2px 1px 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -2px 1px 0 #000, 2px 2px 0 #000, 1px 2px 0 #000, 0 2px 0 #000, -1px 2px 0 #000, -2px 2px 0 #000, 2px 3px 0 #000, 1px 3px 0 #000, 0 3px 0 #000, -1px 3px 0 #000, -2px 3px 0 #000, 2px 4px 0 #000, 1px 4px 0 #000, 0 4px 0 #000, -1px 4px 0 #000, -2px 4px 0 #000, 2px 5px 0 #000, 1px 5px 0 #000, 0 5px 0 #000, -1px 5px 0 #000, -2px 5px 0 #000, 2px 6px 0 #000, 1px 6px 0 #000, 0 6px 0 #000, -1px 6px 0 #000, -2px 6px 0 #000;
+    color: #a4e870;
+    text-align: center;
+    z-index: 0;
+    font-family: Beachday;
+}
+
+.public .card-body {
+    box-shadow: -3px -3px 0 #000, 0 -3px 0 #000, 3px -3px 0 #000, 3px 0 0 #000, 3px 3px 0 #000, 0 3px 0 #000, -3px 3px 0 #000, -3px 0 0 #000, 3px 12px 0 #000, 1.5px 12px 0 #000, 0 12px 0 #000, -1.5px 12px 0 #000, -3px 12px 0 #000;
+    background: #a4e870;
+    padding: 1rem 1.5rem;
+    overflow: hidden;
+    font-weight: 600;
+    white-space: break-spaces;
+    z-index: 1;
+    border-radius: 10px;
+    position: relative;
+    line-height: 150%;
+    font-size: 16px;
+}
+
+.public .card-body {
+    box-shadow: -3px -3px 0 #000, 0 -3px 0 #000, 3px -3px 0 #000, 3px 0 0 #000, 3px 3px 0 #000, 0 3px 0 #000, -3px 3px 0 #000, -3px 0 0 #000, 3px 12px 0 #000, 1.5px 12px 0 #000, 0 12px 0 #000, -1.5px 12px 0 #000, -3px 12px 0 #000;
+    background: #a4e870;
+    padding: 1rem 1.5rem;
+    overflow: hidden;
+    font-weight: 600;
+    white-space: break-spaces;
+    z-index: 1;
+    border-radius: 10px;
+    position: relative;
+    line-height: 150%;
+    font-size: 16px;
+}
+
+.disco-mobile {
+    position: absolute;
+}
+
+@media screen and (min-width: 276px) {
+    .disco-mobile {
+        right: 2rem;
+        top: 30.5rem; 
+    }
+    .discoball-mobile {
+        max-width: 110px;
+    }
+}
+
+@media screen and (min-width: 331px) {
+    .disco-mobile {
+        right: 3rem;
+        top: 29rem; 
+    }
+    .discoball-mobile {
+        max-width: 110px;
+    }
+}
+
+@media screen and (min-width: 332px) {
+    .disco-mobile {
+        right: 5rem;
+        top: 27.5rem; 
+    }
+    .discoball-mobile {
+        max-width: 110px;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    .disco-mobile {
+        right: 6rem;
+        top: 26rem; 
+    }
+    .discoball-mobile {
+        max-width: 110px;
+    }
+}
+
+@media screen and (min-width: 458px) {
+    .disco-mobile {
+        right: 8rem;
+        top: 24rem; 
+    }
+    .discoball-mobile {
+        max-width: 130px;
+    }
+}
+
+@media screen and (min-width: 559px) {
+    .disco-mobile {
+        right: 8rem;
+        top: 22rem; 
+    }
+    .discoball-mobile {
+        max-width: 160px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .disco-mobile {
+        right: 8rem;
+        top: 21rem; 
+    }
+    .discoball-mobile {
+        max-width: 250px;
+    }
+}
+
+@media screen and (min-width: 803px) {
+    .disco-mobile {
+        right: 12rem;
+        top: 19rem; 
+    }
+    .discoball-mobile {
+        max-width: 250px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .disco-mobile {
+        display: none;
+    }
+}
+
+
+.card.public {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .card.public {
+        height: 300px;
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .public .rapper {
+        max-width: 730px;
+    }
+}
+
+.public .rapper, .public .danceboy {
+    position: absolute;
+    bottom: 50px;
+    z-index: 1;
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .public .rapper {
+        max-width: 430px;
+        right: 140px;
+        display: block;
+        bottom: 10px;
+    }
+    .public .danceboy {
+        max-width: 410px;
+        right: -300px;
+        display: block;
+    }
+}
+
+.graphic {
+    margin-bottom: 1.9rem;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+    .graphic {
+        justify-self: flex-end;
+        
+    }
+    .graphic .rapper {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .graphic {
+        top: 0;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .graphic .danceboy {
+        display: none;
+    }
+}
+
+.graphic img {
+    width: 100%;
+    max-width: 120px;
+}
+
+@media screen and (min-width: 450px) {
+    .graphic img {
+        max-width: 150px;
+    }
+} 
+
+@media screen and (min-width: 580px) {
+    .graphic img {
+        max-width: 210px;
+    }
+} 
+
+@media screen and (min-width: 768px) {
+    .graphic img {
+        max-width: 300px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .graphic img {
+        max-width: 420px;
+    }
+
+    .graphic .claw {
+        padding-top: 22vh;
+        pointer-events: none;
+        position: absolute;
+        right: -100px;
+        bottom: -50px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .graphic .claw {
+        position: absolute;
+        bottom: -50px;
+        right: -100px;
+    }
+}
+
+
+.graphic .remaining {
+    position: absolute;
+    bottom: 4rem;
+    left: 0;
+    right: 4rem;
+    font-size: 16px;
+    text-shadow: -1.5px -1.5px 0 #000, 0 -1.5px 0 #000, 1.5px -1.5px 0 #000, 1.5px 0 0 #000, 1.5px 1.5px 0 #000, 0 1.5px 0 #000, -1.5px 1.5px 0 #000, -1.5px 0 0 #000, 1.5px 0 0 #000, 0.75px 0 0 #000, 0 0 0 #000, -0.75px 0 0 #000, -1.5px 0 0 #000, 1.5px 0.75px 0 #000, 0.75px 0.75px 0 #000, 0 0.75px 0 #000, -0.75px 0.75px 0 #000, -1.5px 0.75px 0 #000, 1.5px 1.5px 0 #000, 0.75px 1.5px 0 #000, 0 1.5px 0 #000, -0.75px 1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 2.25px 0 #000, 0.75px 2.25px 0 #000, 0 2.25px 0 #000, -0.75px 2.25px 0 #000, -1.5px 2.25px 0 #000, 1.5px 3px 0 #000, 0.75px 3px 0 #000, 0 3px 0 #000, -0.75px 3px 0 #000, -1.5px 3px 0 #000, 1.5px 3.75px 0 #000, 0.75px 3.75px 0 #000, 0 3.75px 0 #000, -0.75px 3.75px 0 #000, -1.5px 3.75px 0 #000, 1.5px 4.5px 0 #000, 0.75px 4.5px 0 #000, 0 4.5px 0 #000, -0.75px 4.5px 0 #000, -1.5px 4.5px 0 #000;
+    opacity: .9;
+    font-family: Beachday;
+    color: #fff;
+    transform: rotate(10deg);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media screen and (min-width: 760px) {
+    .graphic .remaining {
+        bottom: 4.5rem;
+        left: 0;
+        right: 5rem;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .graphic .remaining {
+        font-size: 24px;
+        bottom: 8vw;
+        left: 0;
+        right: 9vw;
+        text-shadow: -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000, 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, 1px 0 0 #000, 0 0 0 #000, -1px 0 0 #000, -2px 0 0 #000, 2px 1px 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -2px 1px 0 #000, 2px 2px 0 #000, 1px 2px 0 #000, 0 2px 0 #000, -1px 2px 0 #000, -2px 2px 0 #000, 2px 3px 0 #000, 1px 3px 0 #000, 0 3px 0 #000, -1px 3px 0 #000, -2px 3px 0 #000, 2px 4px 0 #000, 1px 4px 0 #000, 0 4px 0 #000, -1px 4px 0 #000, -2px 4px 0 #000, 2px 5px 0 #000, 1px 5px 0 #000, 0 5px 0 #000, -1px 5px 0 #000, -2px 5px 0 #000, 2px 6px 0 #000, 1px 6px 0 #000, 0 6px 0 #000, -1px 6px 0 #000, -2px 6px 0 #000;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .graphic .remaining {
+        font-size: 24px;
+        bottom: 5.5rem;
+        left: 0;
+        right: 7rem;
+        text-shadow: -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000, 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, 1px 0 0 #000, 0 0 0 #000, -1px 0 0 #000, -2px 0 0 #000, 2px 1px 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -2px 1px 0 #000, 2px 2px 0 #000, 1px 2px 0 #000, 0 2px 0 #000, -1px 2px 0 #000, -2px 2px 0 #000, 2px 3px 0 #000, 1px 3px 0 #000, 0 3px 0 #000, -1px 3px 0 #000, -2px 3px 0 #000, 2px 4px 0 #000, 1px 4px 0 #000, 0 4px 0 #000, -1px 4px 0 #000, -2px 4px 0 #000, 2px 5px 0 #000, 1px 5px 0 #000, 0 5px 0 #000, -1px 5px 0 #000, -2px 5px 0 #000, 2px 6px 0 #000, 1px 6px 0 #000, 0 6px 0 #000, -1px 6px 0 #000, -2px 6px 0 #000;
+    }
+}
+
+.floor {
+    position: absolute;
+    bottom: 0;
+    height: 110px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    z-index: 0;
+}
+
+@media screen and (min-width: 760px) {
+    .floor {
+        height: 125px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .floor {
+        height: 185px;
+        -o-object-fit: unset;
+        object-fit: unset;
+    }
+}

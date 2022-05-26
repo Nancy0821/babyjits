@@ -1,0 +1,116 @@
+.team {
+    padding: 3rem 0 5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.team:before {
+    content: " ";
+    height: 100%;
+    width: 100%; 
+}
+
+@media screen and (min-width: 760px) {
+    .team {
+        padding: 5rem 0 7rem 0;
+    }
+}
+
+.team .bg {
+    position: fixed;
+    background: url("../../assets/icons/team-bg.png");
+    background-position: top;
+    background-size: cover;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    width: 100vw;
+}
+
+.team .blur {
+    background: rgba(0,0,0,.2);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.team h2 {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 5rem;
+}
+
+.team-member {
+    margin-bottom: 1rem;
+}
+
+.team-member .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-title {
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    text-shadow: -3px -3px 0 #000, 0 -3px 0 #000, 3px -3px 0 #000, 3px 0 0 #000, 3px 3px 0 #000, 0 3px 0 #000, -3px 3px 0 #000, -3px 0 0 #000, 3px 0 0 #000, 1.5px 0 0 #000, 0 0 0 #000, -1.5px 0 0 #000, -3px 0 0 #000, 3px 1.5px 0 #000, 1.5px 1.5px 0 #000, 0 1.5px 0 #000, -1.5px 1.5px 0 #000, -3px 1.5px 0 #000, 3px 3px 0 #000, 1.5px 3px 0 #000, 0 3px 0 #000, -1.5px 3px 0 #000, -3px 3px 0 #000, 3px 4.5px 0 #000, 1.5px 4.5px 0 #000, 0 4.5px 0 #000, -1.5px 4.5px 0 #000, -3px 4.5px 0 #000, 3px 6px 0 #000, 1.5px 6px 0 #000, 0 6px 0 #000, -1.5px 6px 0 #000, -3px 6px 0 #000, 3px 7.5px 0 #000, 1.5px 7.5px 0 #000, 0 7.5px 0 #000, -1.5px 7.5px 0 #000, -3px 7.5px 0 #000, 3px 9px 0 #000, 1.5px 9px 0 #000, 0 9px 0 #000, -1.5px 9px 0 #000, -3px 9px 0 #000;
+    font-family: Beachday;
+    z-index: 0;
+}
+
+.team-member .card-title {
+    font-size: 48px;
+    margin-bottom: 1.5rem;
+}
+
+.team-member .card-body {
+    max-width: 300px;
+}
+
+.team-member .card-body img {
+    width: 260px;
+    height: auto;
+}
+.team-member .role {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 36px;
+    white-space: pre;
+    text-shadow: -2px -2px 0 #000, 0 -2px 0 #000, 2px -2px 0 #000, 2px 0 0 #000, 2px 2px 0 #000, 0 2px 0 #000, -2px 2px 0 #000, -2px 0 0 #000, 2px 0 0 #000, 1px 0 0 #000, 0 0 0 #000, -1px 0 0 #000, -2px 0 0 #000, 2px 1px 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -2px 1px 0 #000, 2px 2px 0 #000, 1px 2px 0 #000, 0 2px 0 #000, -1px 2px 0 #000, -2px 2px 0 #000, 2px 3px 0 #000, 1px 3px 0 #000, 0 3px 0 #000, -1px 3px 0 #000, -2px 3px 0 #000, 2px 4px 0 #000, 1px 4px 0 #000, 0 4px 0 #000, -1px 4px 0 #000, -2px 4px 0 #000, 2px 5px 0 #000, 1px 5px 0 #000, 0 5px 0 #000, -1px 5px 0 #000, -2px 5px 0 #000, 2px 6px 0 #000, 1px 6px 0 #000, 0 6px 0 #000, -1px 6px 0 #000, -2px 6px 0 #000;
+}
+
+.team-member .socials {
+    text-align: center;
+}
+.team-member .socials a img {
+    transition: all .2s;
+     width: 31px;
+    height: auto;
+}
+
+.team-member .socials a img:hover{
+    transform: scale(1.1);
+}
+
+
+.team .team-grid {
+    display: grid;
+    padding: 2rem;
+}
+
+@media screen and (min-width: 760px) {
+    .team .team-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .team .team-grid {
+        grid-template-columns: repeat(4,1fr);
+        gap: 2rem;
+    }
+}
