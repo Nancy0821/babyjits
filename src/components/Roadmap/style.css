@@ -42,7 +42,7 @@
     }
 }
 
-.roadmap .stage, .roadmap .path, .roadmap .squishie-alien, .roadmap .squishie-angel {
+.roadmap .stage, .roadmap .path, .roadmap .babyjits-alien, .roadmap .babyjits-angel {
     display: none;
 }
 
@@ -58,7 +58,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .roadmap .squishie-angel {
+    .roadmap .babyjits-angel {
         display: block;
         position: relative;
         -webkit-animation: floaty 1s infinite;
@@ -103,7 +103,7 @@
     }
 } */
 /* 
-.squishie-angel .angel {
+.babyjits-angel .angel {
     transform: translate(26.995px, 108px);
 } */
 

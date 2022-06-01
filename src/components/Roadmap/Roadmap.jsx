@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import squishieAngel from "../../assets/icons/babyjits.gif"
+import babyjitsAngel from "../../assets/icons/babyjits.gif"
 import stage from "../../assets/icons/stage.png"
 import $ from "jquery";
 
@@ -20,19 +20,10 @@ const Roadmap = () => {
     }, []);
 
     const handleScroll = (e) => {
-        positionSquishiAngel();
+        positionbabyjitsAngel();
     };
 
-    const Squishiangle = () => {
-        // if (posX === 954.14 && posY === 5679.26) {
-        // } else if (posX === 58.422 && posY === 894.733) {
-        // }
-        return (
-            <img src={squishieAngel} className="angel" id="angelist" alt="squishiangel" style={{ transform: `translateX(${posX}px) translateY(${posY}px) scaleX(${direction ? 1 : -1})` }} />
-        )
-    }
-
-    const positionSquishiAngel = () => {
+    const positionbabyjitsAngel = () => {
         // var scrollY = $("#roadmapsection")[0].offsetTop;
         var scrollY = window.scrollY - $("#roadmapsection")[0].offsetTop;
         var maxScrollY = $("#roadmapsection")[0].offsetWidth;
@@ -60,9 +51,9 @@ const Roadmap = () => {
                 <div className="container" id="roadmapsection">
                     <h2>The Roadmap</h2>
                     <svg id="svgpath" preserveAspectRatio="none" width="931" height="1319" viewBox="0 0 931 1319" fill="none" xmlns="http://www.w3.org/2000/svg" className="path"><path id="travelPath" d="M1.99946 97.9999C181.775 -216.971 930.639 317.716 929.499 580C743.907 297.349 0.0431749 862.581 1.99946 914C44.4229 816.149 945 1112 929.499 1318" stroke="black" strokeWidth="2" strokeDasharray="10 10"></path></svg>
-                    <div className="squishie-angel">
-                        <Squishiangle />
-                        {/* <img src={squishieAngel} className="angel" id="angelist" alt="squishiangel" /> */}
+                    <div className="babyjits-angel">
+                        <img src={babyjitsAngel} className="angel" id="angelist" alt="babyjitsangel" style={{ transform: `translateX(${posX}px) translateY(${posY}px) scaleX(${direction ? 1 : -1})` }} />
+                        {/* <img src={babyjitsAngel} className="angel" id="angelist" alt="babyjitsangel" /> */}
                     </div>
                     <div className="roadmap-items" >
                         <div className="milestone m1">
