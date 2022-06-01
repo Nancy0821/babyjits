@@ -8,8 +8,6 @@ import Three from "../assets/NFTs/collection/4.png";
 import Five from "../assets/NFTs/members/1.png";
 import Six from "../assets/NFTs/members/2.png";
 import Seven from "../assets/NFTs/members/3.png";
-import Eight from "../assets/NFTs/members/4.png";
-import Twitter_icon from '../assets/icons/twitter.png';
 import Instagram_icon from '../assets/icons/Instagram.png';
 
 

@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-import { NavLink } from "react-router-dom";
 import { HEADER_MENU_TOP } from "../../constants";
 import rapper from '../../assets/icons/rapper.png';
 import voiceController from '../../assets/icons/voiceController.gif';
@@ -17,12 +16,12 @@ const Header = () => {
         <div className="hero">
             <div className="container">
                 <div className="disco">
-                    <img src={discoBall} className="discoball" />
+                    <img alt="header images" src={discoBall} className="discoball" />
                 </div>
                 <div className="navbar">
                     <div className="mobile-nav">
                         <h3 className="brand">
-                            <img src={logo} />
+                            <img alt="header images" src={logo} />
                         </h3>
                         <button href="#" className="burger-menu" onClick={() => setShow(true)}>
                             <span></span>
@@ -30,7 +29,7 @@ const Header = () => {
                     </div>
                     <div className={show ? 'links mobile' : 'links'}>
                         <h2 className="brand">
-                            <img src={logo} />
+                            <img alt="header images" src={logo} />
                         </h2>
                         <div className="close" onClick={() => setShow(false)}>&times;</div>
                         <div className="links-container">
@@ -45,7 +44,7 @@ const Header = () => {
                             <div className="right">
                                 {HEADER_MENU_TOP.map((menu) => (
                                     <a href={menu.link} target="_blank" key={menu.id} className="website_link" rel="link">
-                                        <img src={menu.image} alt={menu.image} className='website_logo' />
+                                        <img alt="header images" src={menu.image} alt={menu.image} className='website_logo' />
                                         <span>{menu.name}</span>
                                     </a>
                                 ))}
@@ -56,7 +55,7 @@ const Header = () => {
                 <div className="cards">
                     <div className="card brand">
                         <div className="card-title">
-                            <img src={logo} />
+                            <img alt="header images" src={logo} />
                         </div>
                         <div className="card-body">
                             <p>
@@ -70,20 +69,20 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="disco-mobile">
-                        <img src={discoBall} className="discoball-mobile" />
+                        <img alt="header images" src={discoBall} className="discoball-mobile" />
                     </div>
                     <div className="card public">
-                        <img alt="rapper" src={rapper} draggable="false" className="rapper" data-xblocker="passed" style={{ visibility: 'visible' }} />
-                        <img alt="danceboy1" src={danceboy1} draggable="false" className="danceboy" data-xblocker="passed" style={{ visibility: 'visible' }} />
+                        <img alt="header images" alt="rapper" src={rapper} draggable="false" className="rapper" data-xblocker="passed" style={{ visibility: 'visible' }} />
+                        <img alt="header images" alt="danceboy1" src={danceboy1} draggable="false" className="danceboy" data-xblocker="passed" style={{ visibility: 'visible' }} />
                     </div>
                 </div>
                 <div className="graphic">
-                    <img alt="rapper" src={rapper} draggable="false" className="rapper" data-xblocker="passed" style={{ visibility: 'visible' }} />
-                    <img alt="danceboy" src={danceboy1} draggable="false" className="danceboy" data-xblocker="passed" style={{ visibility: 'visible' }} />
-                    <img alt="claw" src={voiceController} draggable="false" className="claw" data-xblocker="passed" style={{ visibility: 'visible' }} />
+                    <img alt="header images" alt="rapper" src={rapper} draggable="false" className="rapper" data-xblocker="passed" style={{ visibility: 'visible' }} />
+                    <img alt="header images" alt="danceboy" src={danceboy1} draggable="false" className="danceboy" data-xblocker="passed" style={{ visibility: 'visible' }} />
+                    <img alt="header images" alt="claw" src={voiceController} draggable="false" className="claw" data-xblocker="passed" style={{ visibility: 'visible' }} />
                 </div>
             </div>
-            <img alt="floor" src={floor} draggable="false" className="floor" data-xblocker="passed" style={{ visibility: 'visible' }} />
+            <img alt="header images" alt="floor" src={floor} draggable="false" className="floor" data-xblocker="passed" style={{ visibility: 'visible' }} />
         </div>
     )
 }
