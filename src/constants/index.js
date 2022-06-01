@@ -28,8 +28,7 @@ export const COLLECTION_IMAGE = [
 
 export const TEAM_MEMBERS = [
     { id: 0, image: Six, title: "Reez", role: "Founder\nDeveloper", instagram: "https://www.instagram.com/monreezee", icon: Instagram_icon },
-    { id: 1, image: Eight, title: "Flippa", role: "Founder\nAdvisor", instagram: "https://www.instagram.com/flippahavin", icon: Instagram_icon },
-    { id: 2, image: Five, title: "Deeds", role: "Founder\nOperations", instagram: "https://www.instagram.com/lambodeeds", icon: Instagram_icon },
-    { id: 3, image: Seven, title: "Bk", role: "Founder\nOperations", instagram: "https://www.instagram.com/brianjaesungkim", icon: Instagram_icon },
+    { id: 1, image: Five, title: "Deeds", role: "Founder\nOperations", instagram: "https://www.instagram.com/lambodeeds", icon: Instagram_icon },
+    { id: 2, image: Seven, title: "Bk", role: "Founder\nOperations", instagram: "https://www.instagram.com/brianjaesungkim", icon: Instagram_icon },
 
 ]

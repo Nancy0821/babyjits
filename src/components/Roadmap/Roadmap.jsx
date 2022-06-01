@@ -70,7 +70,7 @@ const Roadmap = () => {
                             <h3>Newborns</h3>
                             <ul>
                                 <p>
-                                    <span>Baby Jits are unleashed into the world Saturday, 8pm EST, July 2nd.</span>
+                                    <span>Baby Jits are unleashed into the world.</span>
                                 </p>
                                 <p>
                                     <span>The future now starts with you, the community! We’ll be focused on building a strong community and relationship with our community, so that we can build a decentralized future together.</span>

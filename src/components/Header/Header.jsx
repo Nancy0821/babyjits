@@ -65,7 +65,7 @@ const Header = () => {
                             <p>
                                 Supply: 4444
                                 <br />
-                                Price: 0.25 ETH
+                                Price: 0.3 ETH
                             </p>
                         </div>
                     </div>
