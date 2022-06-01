@@ -22,7 +22,7 @@ const Faq = () => {
                             <div className="answer-container">
                                 The mint date has not yet been revealed, so stay tuned!<br /><br />
 
-                                The total supply is 4444 Baby Jits, priced at 0.3 ETH.
+                                The total supply is 9999 Baby Jits, priced at 0.3 ETH.
                             </div>
                         </div>
                     </div>

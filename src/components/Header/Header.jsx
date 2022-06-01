@@ -63,7 +63,7 @@ const Header = () => {
                                 Baby Jits is the first collection of Jits and a mesh of essences from different pop culture realms from the entertainment world. <br />This community is focused on bringing people together through art, experiences, and interaction.
                             </p>
                             <p>
-                                Supply: 4444
+                                Supply: 9999
                                 <br />
                                 Price: 0.3 ETH
                             </p>
