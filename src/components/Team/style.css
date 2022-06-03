@@ -99,7 +99,7 @@
 
 .team .team-grid {
     display: grid;
-    padding: 2rem;
+    
 }
 
 @media screen and (min-width: 760px) {
@@ -111,6 +111,5 @@
 @media screen and (min-width: 1024px) {
     .team .team-grid {
         grid-template-columns: repeat(3,1fr);
-        gap: 2rem;
     }
 }
